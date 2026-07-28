@@ -9,12 +9,8 @@ permissions:
   contents: write
 
 jobs:
-  build:
-    uses: ./.github/workflows/build-and-test.yml
-
-  publish-release:
-    name: Publish Release Assets
-    needs: build
+  build-and-release:
+    name: Build & Release Native Utility Pet App
     runs-on: macos-14
 
     steps:
@@ -23,6 +19,9 @@ jobs:
 
       - name: Select Xcode
         run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+      - name: Run Unit Tests
+        run: swift test
 
       - name: Build Native App & Installers (.pkg & .dmg)
         run: bash scripts/build-installers.sh
@@ -63,5 +62,6 @@ jobs:
             ```
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
 
