@@ -1,12 +1,13 @@
 import DeviceDiscovery
 import Foundation
-import Testing
+import XCTest
 
-@Test("Media devices preserve the control endpoint needed for DLNA commands")
-func mediaDeviceStoresControlEndpoint() throws {
-    let controlURL = try #require(URL(string: "http://tv.local/upnp/control"))
-    let descriptionURL = try #require(URL(string: "http://tv.local/device.xml"))
-    let device = MediaDevice(id: "uuid:test", name: "Living Room", controlURL: controlURL, descriptionURL: descriptionURL)
-    #expect(device.controlURL == controlURL)
-    #expect(device.name == "Living Room")
+final class DeviceDiscoveryTests: XCTestCase {
+    func testMediaDeviceStoresControlEndpoint() throws {
+        let controlURL = try XCTUnwrap(URL(string: "http://tv.local/upnp/control"))
+        let descriptionURL = try XCTUnwrap(URL(string: "http://tv.local/device.xml"))
+        let device = MediaDevice(id: "uuid:test", name: "Living Room", controlURL: controlURL, descriptionURL: descriptionURL)
+        XCTAssertEqual(device.controlURL, controlURL)
+        XCTAssertEqual(device.name, "Living Room")
+    }
 }

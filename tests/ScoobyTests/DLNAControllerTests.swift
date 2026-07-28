@@ -1,16 +1,17 @@
 @testable import Scooby
 import DeviceDiscovery
 import Foundation
-import Testing
+import XCTest
 
-@Test("Pause sends the AVTransport SOAP action")
-func pauseSendsSOAPAction() async throws {
-    let configuration = URLSessionConfiguration.ephemeral
-    configuration.protocolClasses = [RecordingURLProtocol.self]
-    RecordingURLProtocol.request = nil
-    let device = MediaDevice(id: "tv", name: "Test TV", controlURL: URL(string: "http://tv.local/control")!, descriptionURL: URL(string: "http://tv.local/description")!)
-    try await DLNAController(device: device, session: URLSession(configuration: configuration)).pause()
-    #expect(RecordingURLProtocol.request?.value(forHTTPHeaderField: "SOAPAction") == "\"urn:schemas-upnp-org:service:AVTransport:1#Pause\"")
+final class DLNAControllerTests: XCTestCase {
+    func testPauseSendsSOAPAction() async throws {
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.protocolClasses = [RecordingURLProtocol.self]
+        RecordingURLProtocol.request = nil
+        let device = MediaDevice(id: "tv", name: "Test TV", controlURL: URL(string: "http://tv.local/control")!, descriptionURL: URL(string: "http://tv.local/description")!)
+        try await DLNAController(device: device, session: URLSession(configuration: configuration)).pause()
+        XCTAssertEqual(RecordingURLProtocol.request?.value(forHTTPHeaderField: "SOAPAction"), "\"urn:schemas-upnp-org:service:AVTransport:1#Pause\"")
+    }
 }
 
 final class RecordingURLProtocol: URLProtocol, @unchecked Sendable {
