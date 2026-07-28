@@ -10,7 +10,7 @@ let package = Package(
         .executable(name: "UtilityPet", targets: ["UtilityPet"])
     ],
     targets: [
-        .executableTarget(name: "UtilityPet", dependencies: ["PetCore", "SharedUI", "Scooby"], path: "App/UtilityPets", exclude: ["Info.plist"]),
+        .executableTarget(name: "UtilityPet", dependencies: ["PetCore", "SharedUI", "Scooby"], path: "App/UtilityPets", exclude: ["Info.plist"], resources: [.process("Resources")]),
         .target(name: "PetCore", path: "Packages/PetCore/Sources"),
         .target(name: "SharedUI", path: "Packages/SharedUI/Sources"),
         .target(name: "FinderKit", path: "Packages/FinderKit/Sources"),

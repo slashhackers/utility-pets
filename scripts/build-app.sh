@@ -13,6 +13,9 @@ rm -rf "$app_dir"
 mkdir -p "$app_dir/Contents/MacOS" "$app_dir/Contents/Resources"
 cp "$binary" "$app_dir/Contents/MacOS/UtilityPet"
 chmod +x "$app_dir/Contents/MacOS/UtilityPet"
+if [ -f "$project_dir/App/UtilityPets/Resources/AppIcon.icns" ]; then
+  cp "$project_dir/App/UtilityPets/Resources/AppIcon.icns" "$app_dir/Contents/Resources/AppIcon.icns"
+fi
 cat > "$app_dir/Contents/Info.plist" <<'PLIST'
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -21,6 +24,7 @@ cat > "$app_dir/Contents/Info.plist" <<'PLIST'
 <key>CFBundleIdentifier</key><string>dev.utilitypets.app</string>
 <key>CFBundleName</key><string>Utility Pets</string>
 <key>CFBundleDisplayName</key><string>Utility Pets</string>
+<key>CFBundleIconFile</key><string>AppIcon</string>
 <key>CFBundlePackageType</key><string>APPL</string>
 <key>CFBundleShortVersionString</key><string>0.1.0</string>
 <key>CFBundleVersion</key><string>1</string>
