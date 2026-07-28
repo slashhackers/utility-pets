@@ -6,10 +6,23 @@ final class PetEventBusTests: XCTestCase {
         let bus = PetEventBus()
         let events = await bus.stream()
         let expected = PetEvent.petStarted(id: "scooby")
-        async let received: PetEvent? = events.first(where: { $0 == expected })
+        
+        let exp = expectation(description: "Event delivered")
+        var received: PetEvent?
+        
+        Task {
+            for await event in events {
+                if event == expected {
+                    received = event
+                    exp.fulfill()
+                    break
+                }
+            }
+        }
+        
         await bus.publish(expected)
-        let actual = await received
-        XCTAssertEqual(actual, expected)
+        await fulfillment(of: [exp], timeout: 3.0)
+        XCTAssertEqual(received, expected)
     }
 }
 
