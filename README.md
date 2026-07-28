@@ -38,7 +38,7 @@ See [`docs/architecture.md`](docs/architecture.md) for the structure and pet-ext
 ### Option 1 — 1-Line `curl` Installer (Recommended)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/slashhackers/utility-pets/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/slashhackers/utility-pets/master/install.sh | bash
 ```
 
 > Downloads the pre-built `Utility Pets.app` bundle from GitHub Releases, installs it into `/Applications`, and registers the **Cast with Scooby** Finder Quick Action. Zero dependencies required.
@@ -56,7 +56,7 @@ bash scripts/install-app.sh
 ## 🗑️ Uninstall
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/slashhackers/utility-pets/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/slashhackers/utility-pets/master/uninstall.sh | bash
 ```
 
 ---

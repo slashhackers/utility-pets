@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Utility Pet - Uninstaller
-# Usage: curl -fsSL https://raw.githubusercontent.com/slashhackers/utility-pets/main/uninstall.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/slashhackers/utility-pets/master/uninstall.sh | bash
 
 set -e
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # macOS Utility Pet - Professional 1-Line Remote Installer
-# Usage: curl -fsSL https://raw.githubusercontent.com/slashhackers/utility-pets/main/install.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/slashhackers/utility-pets/master/install.sh | bash
 
 set -e
 

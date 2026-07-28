@@ -58,7 +58,7 @@ jobs:
 
             #### 🚀 1-Line Remote Installer Command
             ```bash
-            curl -fsSL https://raw.githubusercontent.com/${{ github.repository }}/main/install.sh | bash
+            curl -fsSL https://raw.githubusercontent.com/${{ github.repository }}/master/install.sh | bash
             ```
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
