@@ -6,14 +6,21 @@ public actor PetEventBus {
     public init() {}
     public func stream() -> AsyncStream<PetEvent> {
         let token = UUID()
-        var continuation: AsyncStream<PetEvent>.Continuation?
-        let stream = AsyncStream<PetEvent> { continuation = $0 }
-        guard let continuation else { return stream }
-        continuations[token] = continuation
-        continuation.onTermination = { [weak self] _ in Task { await self?.remove(token) } }
-        return stream
+        return AsyncStream<PetEvent> { [weak self] continuation in
+            Task { [weak self] in
+                await self?.register(continuation, for: token)
+            }
+            continuation.onTermination = { [weak self] _ in
+                Task { [weak self] in
+                    await self?.remove(token)
+                }
+            }
+        }
     }
     public func publish(_ event: PetEvent) { continuations.values.forEach { $0.yield(event) } }
+    private func register(_ continuation: AsyncStream<PetEvent>.Continuation, for token: UUID) {
+        continuations[token] = continuation
+    }
     private func remove(_ token: UUID) { continuations[token] = nil }
 }
 
