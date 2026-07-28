@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>AMApplicationBuild</key><string>523</string><key>AMApplicationVersion</key><string>2.10</string><key>AMDocumentVersion</key><string>2</string>
+<key>actions</key><array><dict><key>action</key><dict>
+<key>AMAccepts</key><dict><key>Container</key><string>List</string><key>Optional</key><true/><key>Types</key><array><string>com.apple.cocoa.path</string></array></dict>
+<key>AMActionVersion</key><string>2.0.3</string><key>AMApplication</key><array><string>Automator</string></array><key>ActionBundlePath</key><string>/System/Library/Automator/Run Shell Script.action</string><key>ActionName</key><string>Run Shell Script</string>
+<key>ActionParameters</key><dict><key>COMMAND_STRING</key><string>for file in "$@"; do
+  open -a "Utility Pets" --args "$file"
+done</string><key>CheckedForUserDefaultShell</key><true/><key>inputMethod</key><integer>1</integer><key>shell</key><string>/bin/zsh</string></dict>
+<key>BundleIdentifier</key><string>com.apple.RunShellScript</string><key>CFBundleVersion</key><string>2.0.3</string><key>CanShowSelectedItemsWhenRun</key><false/><key>CanShowWhenRun</key><true/><key>Category</key><array><string>AMCategoryUtilities</string></array><key>Class Name</key><string>RunShellScriptAction</string>
+</dict></dict></array>
+<key>workflowMetaData</key><dict><key>inputTypeIdentifier</key><string>public.mpeg-4</string><key>outputTypeIdentifier</key><string>com.apple.Automator.nothing</string><key>presentationMode</key><integer>15</integer><key>processesInput</key><integer>0</integer><key>serviceInputTypeIdentifier</key><string>public.mpeg-4</string><key>serviceOutputTypeIdentifier</key><string>com.apple.Automator.nothing</string><key>serviceProcessesInput</key><integer>0</integer><key>systemImageName</key><string>NSTouchBarTv</string><key>useView</key><true/><key>workflowTypeIdentifier</key><string>com.apple.Automator.servicesMenu</string></dict>
+</dict></plist>

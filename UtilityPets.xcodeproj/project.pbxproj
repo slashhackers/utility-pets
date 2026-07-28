@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02FB8E724A7BD9067C14D114 /* PetCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0485F7C4609AC16D51D6046 /* PetCore.framework */; };
+		03A62279ED8A1342FCE678A8 /* SharedUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9499A81CE48359C362C96AF /* SharedUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E81FEC1E06D590A826795ED /* ScoobyFinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF48B83365104806FB592CC /* ScoobyFinderSync.swift */; };
+		26B3762CC78692797F7228BB /* Scooby.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E99170BC9947E9B5A22E1F5 /* Scooby.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29661587A3D6D3A7787FEBF2 /* CastingScoobyPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB53642E68778BD8A0260A6 /* CastingScoobyPet.swift */; };
+		312B0BF77EB687C0606F61F6 /* SSDPDeviceDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A4B98C24467F00AA999945 /* SSDPDeviceDiscovery.swift */; };
+		36A0209E934794BE51D7ACF7 /* NetworkAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB56E6A8BF22F4D77445C76 /* NetworkAddress.swift */; };
+		4E35ED760C5BD28820F42040 /* PetCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0485F7C4609AC16D51D6046 /* PetCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5049EBCE80B7175048348782 /* MediaStreamServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153ED317944C6C5B9EDB54F8 /* MediaStreamServer.swift */; };
+		62662753016222CDF316273F /* Scooby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E99170BC9947E9B5A22E1F5 /* Scooby.framework */; };
+		642C8BB224F66C748EB955ED /* PetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DCCCF7DF38919314A0F5F /* PetCard.swift */; };
+		70D5B0CBF67B0CED711E182A /* UtilityPetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788FF7245C168871270118E /* UtilityPetsApp.swift */; };
+		760ACE7A5F48522866DF685C /* PetEventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58BE412AD6E0BD9E2E4602A /* PetEventBus.swift */; };
+		78892C5DEF5A2593444D8BC5 /* DeviceDiscovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA18F56615473107C73BAA7F /* DeviceDiscovery.framework */; };
+		95E813BD210E09DA4B6A8B97 /* DeviceDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC65F5E834A5CB46A34C970 /* DeviceDiscovery.swift */; };
+		9914523B75D50211A36BC390 /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9499A81CE48359C362C96AF /* SharedUI.framework */; };
+		CC5430C4A3FD5E0FF38995CE /* ScoobyFinderSync.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 541F0BA71879AF3622ADB7C8 /* ScoobyFinderSync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D6F183D53E15376819159DB6 /* PetCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0485F7C4609AC16D51D6046 /* PetCore.framework */; };
+		D806D2EE2C8D72642BDC6660 /* DLNAController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71135EF769C56697FA2053C5 /* DLNAController.swift */; };
+		EB1C55526A18B3C9910B1C10 /* PetPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD419D9E38869C3D57C6EC75 /* PetPlugin.swift */; };
+		F30D555B471F72FEB55CF5B7 /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9499A81CE48359C362C96AF /* SharedUI.framework */; };
+		F903EDBA641FAB3881DE8A36 /* PetRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46677E67C7F8468AB34DF5C3 /* PetRegistry.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		051279BD373F95DC3520AEE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F93AC0F3B80694F75FB1192C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17859B46FA2F735EBB912C8A;
+			remoteInfo = Scooby;
+		};
+		0F36E53E41E778314F355ACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F93AC0F3B80694F75FB1192C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0DD05B59383088538047FC7;
+			remoteInfo = ScoobyFinderSync;
+		};
+		138510EF0EC98E8144DB0D74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F93AC0F3B80694F75FB1192C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52A2D8E1E68CA58759871BDB;
+			remoteInfo = DeviceDiscovery;
+		};
+		357812EEBC96D04F05880A78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F93AC0F3B80694F75FB1192C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B3632F01BEBDAF4AE84433D;
+			remoteInfo = PetCore;
+		};
+		57102C478BA1C22E1BDC9857 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F93AC0F3B80694F75FB1192C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD39A9547D351732B860A45;
+			remoteInfo = SharedUI;
+		};
+		A614DCAA8109B655DA51BD91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F93AC0F3B80694F75FB1192C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD39A9547D351732B860A45;
+			remoteInfo = SharedUI;
+		};
+		ABB20A294DC41014739C8878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F93AC0F3B80694F75FB1192C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B3632F01BEBDAF4AE84433D;
+			remoteInfo = PetCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13FA1D4D0401C8AAFF9ED8C9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CC5430C4A3FD5E0FF38995CE /* ScoobyFinderSync.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75B357C7D5BD6879A55AE3C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4E35ED760C5BD28820F42040 /* PetCore.framework in Embed Frameworks */,
+				03A62279ED8A1342FCE678A8 /* SharedUI.framework in Embed Frameworks */,
+				26B3762CC78692797F7228BB /* Scooby.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		153ED317944C6C5B9EDB54F8 /* MediaStreamServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaStreamServer.swift; sourceTree = "<group>"; };
+		2C143FB7386387A74FBF41C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2E99170BC9947E9B5A22E1F5 /* Scooby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scooby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		425107E5FADAB99ADBD34676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		46677E67C7F8468AB34DF5C3 /* PetRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRegistry.swift; sourceTree = "<group>"; };
+		4EB53642E68778BD8A0260A6 /* CastingScoobyPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastingScoobyPet.swift; sourceTree = "<group>"; };
+		541F0BA71879AF3622ADB7C8 /* ScoobyFinderSync.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScoobyFinderSync.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB56E6A8BF22F4D77445C76 /* NetworkAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAddress.swift; sourceTree = "<group>"; };
+		71135EF769C56697FA2053C5 /* DLNAController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLNAController.swift; sourceTree = "<group>"; };
+		8788FF7245C168871270118E /* UtilityPetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityPetsApp.swift; sourceTree = "<group>"; };
+		8FA2BD0626AE84BF4536A8E2 /* UtilityPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UtilityPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9499A81CE48359C362C96AF /* SharedUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD419D9E38869C3D57C6EC75 /* PetPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetPlugin.swift; sourceTree = "<group>"; };
+		C58BE412AD6E0BD9E2E4602A /* PetEventBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetEventBus.swift; sourceTree = "<group>"; };
+		D51DCCCF7DF38919314A0F5F /* PetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCard.swift; sourceTree = "<group>"; };
+		D7A4B98C24467F00AA999945 /* SSDPDeviceDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSDPDeviceDiscovery.swift; sourceTree = "<group>"; };
+		DA18F56615473107C73BAA7F /* DeviceDiscovery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceDiscovery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0485F7C4609AC16D51D6046 /* PetCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PetCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC65F5E834A5CB46A34C970 /* DeviceDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDiscovery.swift; sourceTree = "<group>"; };
+		FFF48B83365104806FB592CC /* ScoobyFinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoobyFinderSync.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05396FDB051B7FC7CE8D1B2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F183D53E15376819159DB6 /* PetCore.framework in Frameworks */,
+				9914523B75D50211A36BC390 /* SharedUI.framework in Frameworks */,
+				78892C5DEF5A2593444D8BC5 /* DeviceDiscovery.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EA2A74B48CA4CB2646DC6A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FB8E724A7BD9067C14D114 /* PetCore.framework in Frameworks */,
+				F30D555B471F72FEB55CF5B7 /* SharedUI.framework in Frameworks */,
+				62662753016222CDF316273F /* Scooby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17DDD6CD60000466556320AB = {
+			isa = PBXGroup;
+			children = (
+				2CE54B037B54F9EB270AA14D /* FinderExtension */,
+				B9E4350A345939ED10869484 /* Sources */,
+				B447E24A0E3937EF16F51640 /* Sources */,
+				60FF5240C57EAE545A7320DC /* Sources */,
+				2A507BCB2A958A929CF128C5 /* Sources */,
+				AAC51EFB0BDF2A4440971636 /* UtilityPets */,
+				347CB4A0470DD525D2F32AFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A507BCB2A958A929CF128C5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4EB53642E68778BD8A0260A6 /* CastingScoobyPet.swift */,
+				71135EF769C56697FA2053C5 /* DLNAController.swift */,
+				153ED317944C6C5B9EDB54F8 /* MediaStreamServer.swift */,
+				6EB56E6A8BF22F4D77445C76 /* NetworkAddress.swift */,
+			);
+			name = Sources;
+			path = Pets/Scooby/Sources;
+			sourceTree = "<group>";
+		};
+		2CE54B037B54F9EB270AA14D /* FinderExtension */ = {
+			isa = PBXGroup;
+			children = (
+				2C143FB7386387A74FBF41C9 /* Info.plist */,
+				FFF48B83365104806FB592CC /* ScoobyFinderSync.swift */,
+			);
+			path = FinderExtension;
+			sourceTree = "<group>";
+		};
+		347CB4A0470DD525D2F32AFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA18F56615473107C73BAA7F /* DeviceDiscovery.framework */,
+				E0485F7C4609AC16D51D6046 /* PetCore.framework */,
+				2E99170BC9947E9B5A22E1F5 /* Scooby.framework */,
+				541F0BA71879AF3622ADB7C8 /* ScoobyFinderSync.appex */,
+				A9499A81CE48359C362C96AF /* SharedUI.framework */,
+				8FA2BD0626AE84BF4536A8E2 /* UtilityPets.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60FF5240C57EAE545A7320DC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D51DCCCF7DF38919314A0F5F /* PetCard.swift */,
+			);
+			name = Sources;
+			path = Packages/SharedUI/Sources;
+			sourceTree = "<group>";
+		};
+		AAC51EFB0BDF2A4440971636 /* UtilityPets */ = {
+			isa = PBXGroup;
+			children = (
+				425107E5FADAB99ADBD34676 /* Info.plist */,
+				8788FF7245C168871270118E /* UtilityPetsApp.swift */,
+			);
+			name = UtilityPets;
+			path = App/UtilityPets;
+			sourceTree = "<group>";
+		};
+		B447E24A0E3937EF16F51640 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C58BE412AD6E0BD9E2E4602A /* PetEventBus.swift */,
+				BD419D9E38869C3D57C6EC75 /* PetPlugin.swift */,
+				46677E67C7F8468AB34DF5C3 /* PetRegistry.swift */,
+			);
+			name = Sources;
+			path = Packages/PetCore/Sources;
+			sourceTree = "<group>";
+		};
+		B9E4350A345939ED10869484 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EFC65F5E834A5CB46A34C970 /* DeviceDiscovery.swift */,
+				D7A4B98C24467F00AA999945 /* SSDPDeviceDiscovery.swift */,
+			);
+			name = Sources;
+			path = Packages/DeviceDiscovery/Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17859B46FA2F735EBB912C8A /* Scooby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BAA580950B1D3E08D3F6411 /* Build configuration list for PBXNativeTarget "Scooby" */;
+			buildPhases = (
+				8D3498632D7FDCDC9B248F66 /* Sources */,
+				05396FDB051B7FC7CE8D1B2B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				624D55DBC560909B6244F8CB /* PBXTargetDependency */,
+				C81D565849062B56F0EEA3C2 /* PBXTargetDependency */,
+				A79258187D31B7765CA12526 /* PBXTargetDependency */,
+			);
+			name = Scooby;
+			packageProductDependencies = (
+			);
+			productName = Scooby;
+			productReference = 2E99170BC9947E9B5A22E1F5 /* Scooby.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2B3632F01BEBDAF4AE84433D /* PetCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53ED76B5B1113A4811D860EB /* Build configuration list for PBXNativeTarget "PetCore" */;
+			buildPhases = (
+				13EEA544045DBF52FE82F8B1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetCore;
+			packageProductDependencies = (
+			);
+			productName = PetCore;
+			productReference = E0485F7C4609AC16D51D6046 /* PetCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52A2D8E1E68CA58759871BDB /* DeviceDiscovery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E90DCF036D4352B3449220E /* Build configuration list for PBXNativeTarget "DeviceDiscovery" */;
+			buildPhases = (
+				337E4A2B726AE7EFE441891A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceDiscovery;
+			packageProductDependencies = (
+			);
+			productName = DeviceDiscovery;
+			productReference = DA18F56615473107C73BAA7F /* DeviceDiscovery.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8FD39A9547D351732B860A45 /* SharedUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A84D678A5E41EED053762C27 /* Build configuration list for PBXNativeTarget "SharedUI" */;
+			buildPhases = (
+				0C8D2E1C3E1947A6483A6E7C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedUI;
+			packageProductDependencies = (
+			);
+			productName = SharedUI;
+			productReference = A9499A81CE48359C362C96AF /* SharedUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0DD05B59383088538047FC7 /* ScoobyFinderSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CA23522BD39EAB5763BF502 /* Build configuration list for PBXNativeTarget "ScoobyFinderSync" */;
+			buildPhases = (
+				3A37AE8222A8A78C4F7CE741 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScoobyFinderSync;
+			packageProductDependencies = (
+			);
+			productName = ScoobyFinderSync;
+			productReference = 541F0BA71879AF3622ADB7C8 /* ScoobyFinderSync.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F125B80A6A53D014B4D7FA56 /* UtilityPets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F767C42B0BD66E68B7A9A55A /* Build configuration list for PBXNativeTarget "UtilityPets" */;
+			buildPhases = (
+				C9DAEE4A6E896168821EA05A /* Sources */,
+				4EA2A74B48CA4CB2646DC6A8 /* Frameworks */,
+				13FA1D4D0401C8AAFF9ED8C9 /* Embed Foundation Extensions */,
+				C75B357C7D5BD6879A55AE3C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE2B2443A433D8EFB9A58C3D /* PBXTargetDependency */,
+				80F6725F4D261FF3394E8FD4 /* PBXTargetDependency */,
+				1C39A7CB19BAD06602C42A14 /* PBXTargetDependency */,
+				F1D090972E75BAA07B94C754 /* PBXTargetDependency */,
+			);
+			name = UtilityPets;
+			packageProductDependencies = (
+			);
+			productName = UtilityPets;
+			productReference = 8FA2BD0626AE84BF4536A8E2 /* UtilityPets.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F93AC0F3B80694F75FB1192C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = B23FE44418F6BD560CCE8183 /* Build configuration list for PBXProject "UtilityPets" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 17DDD6CD60000466556320AB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 347CB4A0470DD525D2F32AFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B3632F01BEBDAF4AE84433D /* PetCore */,
+				8FD39A9547D351732B860A45 /* SharedUI */,
+				52A2D8E1E68CA58759871BDB /* DeviceDiscovery */,
+				17859B46FA2F735EBB912C8A /* Scooby */,
+				F125B80A6A53D014B4D7FA56 /* UtilityPets */,
+				E0DD05B59383088538047FC7 /* ScoobyFinderSync */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C8D2E1C3E1947A6483A6E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642C8BB224F66C748EB955ED /* PetCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13EEA544045DBF52FE82F8B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760ACE7A5F48522866DF685C /* PetEventBus.swift in Sources */,
+				EB1C55526A18B3C9910B1C10 /* PetPlugin.swift in Sources */,
+				F903EDBA641FAB3881DE8A36 /* PetRegistry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337E4A2B726AE7EFE441891A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E813BD210E09DA4B6A8B97 /* DeviceDiscovery.swift in Sources */,
+				312B0BF77EB687C0606F61F6 /* SSDPDeviceDiscovery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A37AE8222A8A78C4F7CE741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E81FEC1E06D590A826795ED /* ScoobyFinderSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D3498632D7FDCDC9B248F66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29661587A3D6D3A7787FEBF2 /* CastingScoobyPet.swift in Sources */,
+				D806D2EE2C8D72642BDC6660 /* DLNAController.swift in Sources */,
+				5049EBCE80B7175048348782 /* MediaStreamServer.swift in Sources */,
+				36A0209E934794BE51D7ACF7 /* NetworkAddress.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DAEE4A6E896168821EA05A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D5B0CBF67B0CED711E182A /* UtilityPetsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C39A7CB19BAD06602C42A14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17859B46FA2F735EBB912C8A /* Scooby */;
+			targetProxy = 051279BD373F95DC3520AEE0 /* PBXContainerItemProxy */;
+		};
+		624D55DBC560909B6244F8CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B3632F01BEBDAF4AE84433D /* PetCore */;
+			targetProxy = ABB20A294DC41014739C8878 /* PBXContainerItemProxy */;
+		};
+		80F6725F4D261FF3394E8FD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD39A9547D351732B860A45 /* SharedUI */;
+			targetProxy = 57102C478BA1C22E1BDC9857 /* PBXContainerItemProxy */;
+		};
+		A79258187D31B7765CA12526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52A2D8E1E68CA58759871BDB /* DeviceDiscovery */;
+			targetProxy = 138510EF0EC98E8144DB0D74 /* PBXContainerItemProxy */;
+		};
+		C81D565849062B56F0EEA3C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD39A9547D351732B860A45 /* SharedUI */;
+			targetProxy = A614DCAA8109B655DA51BD91 /* PBXContainerItemProxy */;
+		};
+		EE2B2443A433D8EFB9A58C3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B3632F01BEBDAF4AE84433D /* PetCore */;
+			targetProxy = 357812EEBC96D04F05880A78 /* PBXContainerItemProxy */;
+		};
+		F1D090972E75BAA07B94C754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0DD05B59383088538047FC7 /* ScoobyFinderSync */;
+			targetProxy = 0F36E53E41E778314F355ACB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4B35EF86DC8CB79C78F9A848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		4D91B54E7B4DBBDF58C64D94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		58C51EB467CF36DC3DCEABA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FinderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.utilitypets.app.findersync;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5EFA995EA6DD2022CCDF79C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		7B7878EBEC158A499B7C437F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		85570D3F0C5FAABFFCB81DE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		93B0B39F539C9E66AFD0C5BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = App/UtilityPets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		99E798AB7F1A5AD707CD355C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ACFB74E6C7206461FA230F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		BB10DFAEB1D0A5F533520D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FinderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.utilitypets.app.findersync;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D455BF0E184C83DD5FBDE5F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		D6FB68D8994E45A2F1EC57FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DF5EAC742DB48209583542CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		FC8B43FC4266EE574EE909F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = App/UtilityPets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E90DCF036D4352B3449220E /* Build configuration list for PBXNativeTarget "DeviceDiscovery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B7878EBEC158A499B7C437F /* Debug */,
+				DF5EAC742DB48209583542CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4CA23522BD39EAB5763BF502 /* Build configuration list for PBXNativeTarget "ScoobyFinderSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58C51EB467CF36DC3DCEABA9 /* Debug */,
+				BB10DFAEB1D0A5F533520D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		53ED76B5B1113A4811D860EB /* Build configuration list for PBXNativeTarget "PetCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACFB74E6C7206461FA230F4D /* Debug */,
+				5EFA995EA6DD2022CCDF79C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6BAA580950B1D3E08D3F6411 /* Build configuration list for PBXNativeTarget "Scooby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D91B54E7B4DBBDF58C64D94 /* Debug */,
+				85570D3F0C5FAABFFCB81DE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A84D678A5E41EED053762C27 /* Build configuration list for PBXNativeTarget "SharedUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B35EF86DC8CB79C78F9A848 /* Debug */,
+				D455BF0E184C83DD5FBDE5F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B23FE44418F6BD560CCE8183 /* Build configuration list for PBXProject "UtilityPets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99E798AB7F1A5AD707CD355C /* Debug */,
+				D6FB68D8994E45A2F1EC57FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F767C42B0BD66E68B7A9A55A /* Build configuration list for PBXNativeTarget "UtilityPets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B0B39F539C9E66AFD0C5BB /* Debug */,
+				FC8B43FC4266EE574EE909F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F93AC0F3B80694F75FB1192C /* Project object */;
+}

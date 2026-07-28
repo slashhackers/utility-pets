@@ -1,0 +1,61 @@
+name: Release & Publish Native macOS App
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    name: Build & Release Native Utility Pet App
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+      - name: Run Unit Tests
+        run: swift test
+
+      - name: Build Native App
+        run: bash scripts/build-native-app.sh
+
+      - name: Package Release Archive
+        run: |
+          mkdir -p release-bundle
+          cp -r "dist/Utility Pets.app" scripts README.md LICENSE release-bundle/
+          
+          # Create compressed archive
+          tar -czvf UtilityPet-macos.tar.gz -C release-bundle .
+          
+          # Generate SHA256 checksum
+          shasum -a 256 UtilityPet-macos.tar.gz > UtilityPet-macos.tar.gz.sha256
+          echo "SHA256 Checksum: $(cat UtilityPet-macos.tar.gz.sha256)"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            UtilityPet-macos.tar.gz
+            UtilityPet-macos.tar.gz.sha256
+            install.sh
+            uninstall.sh
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+          body: |
+            ### 🐾 Utility Pet macOS Release
+
+            #### 🚀 1-Line Remote Installer Command
+            ```bash
+            curl -fsSL https://raw.githubusercontent.com/${{ github.repository }}/main/install.sh | bash
+            ```
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

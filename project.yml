@@ -1,0 +1,56 @@
+name: UtilityPets
+options:
+  minimumXcodeGenVersion: 2.46.0
+configs:
+  Debug: debug
+  Release: release
+settings:
+  base:
+    MACOSX_DEPLOYMENT_TARGET: 13.0
+    SWIFT_VERSION: 5.0
+targets:
+  PetCore:
+    type: framework
+    platform: macOS
+    sources: [Packages/PetCore/Sources]
+    settings: { base: { GENERATE_INFOPLIST_FILE: YES } }
+  SharedUI:
+    type: framework
+    platform: macOS
+    sources: [Packages/SharedUI/Sources]
+    settings: { base: { GENERATE_INFOPLIST_FILE: YES } }
+  DeviceDiscovery:
+    type: framework
+    platform: macOS
+    sources: [Packages/DeviceDiscovery/Sources]
+    settings: { base: { GENERATE_INFOPLIST_FILE: YES } }
+  Scooby:
+    type: framework
+    platform: macOS
+    sources: [Pets/Scooby/Sources]
+    dependencies:
+      - target: PetCore
+      - target: SharedUI
+      - target: DeviceDiscovery
+    settings: { base: { GENERATE_INFOPLIST_FILE: YES } }
+  UtilityPets:
+    type: application
+    platform: macOS
+    sources: [App/UtilityPets]
+    settings:
+      base:
+        INFOPLIST_FILE: App/UtilityPets/Info.plist
+    dependencies:
+      - target: PetCore
+      - target: SharedUI
+      - target: Scooby
+      - target: ScoobyFinderSync
+        embed: true
+  ScoobyFinderSync:
+    type: app-extension
+    platform: macOS
+    sources: [FinderExtension]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.utilitypets.app.findersync
+        INFOPLIST_FILE: FinderExtension/Info.plist
