@@ -23,8 +23,8 @@ jobs:
       - name: Run Unit Tests
         run: swift test
 
-      - name: Build Native App
-        run: bash scripts/build-native-app.sh
+      - name: Build Native App & Installers (.pkg & .dmg)
+        run: bash scripts/build-installers.sh
 
       - name: Package Release Archive
         run: |
@@ -33,17 +33,21 @@ jobs:
           
           # Create compressed archive
           tar -czvf UtilityPet-macos.tar.gz -C release-bundle .
+          cp dist/UtilityPets.pkg .
+          cp dist/UtilityPets.dmg .
           
-          # Generate SHA256 checksum
-          shasum -a 256 UtilityPet-macos.tar.gz > UtilityPet-macos.tar.gz.sha256
-          echo "SHA256 Checksum: $(cat UtilityPet-macos.tar.gz.sha256)"
+          # Generate SHA256 checksums
+          shasum -a 256 UtilityPet-macos.tar.gz UtilityPets.pkg UtilityPets.dmg > checksums.txt
+          cat checksums.txt
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
+            UtilityPets.pkg
+            UtilityPets.dmg
             UtilityPet-macos.tar.gz
-            UtilityPet-macos.tar.gz.sha256
+            checksums.txt
             install.sh
             uninstall.sh
           draft: false
