@@ -26,18 +26,13 @@ jobs:
       - name: Build Native App & Installers (.pkg & .dmg)
         run: bash scripts/build-installers.sh
 
-      - name: Package Release Archive
+      - name: Package Release Artifacts
         run: |
-          mkdir -p release-bundle
-          cp -r "dist/Utility Pets.app" scripts README.md LICENSE release-bundle/
-          
-          # Create compressed archive
-          tar -czvf UtilityPet-macos.tar.gz -C release-bundle .
           cp dist/UtilityPets.pkg .
           cp dist/UtilityPets.dmg .
           
           # Generate SHA256 checksums
-          shasum -a 256 UtilityPet-macos.tar.gz UtilityPets.pkg UtilityPets.dmg > checksums.txt
+          shasum -a 256 UtilityPets.pkg UtilityPets.dmg > checksums.txt
           cat checksums.txt
 
       - name: Create GitHub Release
@@ -47,10 +42,7 @@ jobs:
           files: |
             UtilityPets.pkg
             UtilityPets.dmg
-            UtilityPet-macos.tar.gz
             checksums.txt
-            install.sh
-            uninstall.sh
           draft: false
           prerelease: false
           make_latest: true
@@ -58,14 +50,17 @@ jobs:
           body: |
             ### 🐾 Utility Pet macOS Release (Stable)
             
-            This is an official stable release of Utility Pet.
-
-            #### 🚀 1-Line Remote Installer Command
+            #### 🚀 Installation Options:
+            - **Installer Package:** Download `UtilityPets.pkg`
+            - **Disk Image:** Download `UtilityPets.dmg`
+            
+            #### 1-Line Remote Installer Command:
             ```bash
             curl -fsSL https://raw.githubusercontent.com/${{ github.repository }}/master/install.sh | bash
             ```
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
 
 

@@ -39,29 +39,26 @@ See [`docs/architecture.md`](docs/architecture.md) for the structure and pet-ext
 
 ## 📦 Installation
 
-### Option 1 — 1-Line `curl` Installer (Recommended)
+### Option 1 — Download Pre-Built Installers (Recommended)
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/slashhackers/utility-pets/master/install.sh | bash
-```
-
-> Downloads the pre-built `Utility Pets.app` bundle from GitHub Releases, installs it into `/Applications`, and registers the **Cast with Scooby** Finder Quick Action. Zero dependencies required.
+Download the latest release from [GitHub Releases](https://github.com/slashhackers/utility-pets/releases/latest):
+* **`UtilityPets.dmg`**: Mount the disk image and drag **Utility Pets** into your `/Applications` folder.
+* **`UtilityPets.pkg`**: Double-click to run the guided macOS installer package (automatically registers the **Cast with Scooby** Quick Action).
 
 ### Option 2 — Build from Source
 
 ```bash
 git clone https://github.com/slashhackers/utility-pets.git
 cd utility-pets
-bash scripts/install-app.sh
+bash scripts/build-app.sh
 ```
 
 ---
 
 ## 🗑️ Uninstall
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/slashhackers/utility-pets/master/uninstall.sh | bash
-```
+To uninstall **Utility Pets**, drag `Utility Pets.app` from your `/Applications` folder to the Trash. If you installed via `.pkg`, you can also remove the Quick Action workflow from `~/Library/Services/Cast with Scooby.workflow`.
+
 
 ---
 
@@ -95,11 +92,9 @@ utility-pets/
 │   ├── PetCoreTests/             # Swift tests for PetCore
 │   └── ScoobyTests/              # Swift tests for Scooby pet & DLNA
 ├── scripts/
-│   ├── build-native-app.sh       # Native .app bundle builder
-│   ├── install-app.sh            # Local app installer
+│   ├── build-app.sh              # Native .app bundle builder
+│   ├── build-installers.sh       # Native .pkg & .dmg installer builder
 │   └── install-finder-quick-action.sh # Finder Quick Action installer
-├── install.sh                    # 1-line remote installer
-├── uninstall.sh                  # 1-line remote uninstaller
 └── Package.swift                 # Swift Package Manager manifest
 ```
 
