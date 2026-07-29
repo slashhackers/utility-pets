@@ -43,6 +43,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
+          name: "Utility Pet ${{ github.ref_name }} (Stable)"
           files: |
             UtilityPets.pkg
             UtilityPets.dmg
@@ -52,9 +53,12 @@ jobs:
             uninstall.sh
           draft: false
           prerelease: false
+          make_latest: true
           generate_release_notes: true
           body: |
-            ### 🐾 Utility Pet macOS Release
+            ### 🐾 Utility Pet macOS Release (Stable)
+            
+            This is an official stable release of Utility Pet.
 
             #### 🚀 1-Line Remote Installer Command
             ```bash

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/header_poster.png" alt="Utility Pets Header Poster" width="100%" />
+</p>
+
 # 🐾 Utility Pet — native macOS companions
 
 > A native macOS host for small, focused utility pets. The first pet is **🐶 Casting Scooby**, a local-media casting companion.

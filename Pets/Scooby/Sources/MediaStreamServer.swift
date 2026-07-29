@@ -16,6 +16,8 @@ final class MediaStreamServer: @unchecked Sendable {
         guard socketFD >= 0 else { throw CocoaError(.fileWriteUnknown) }
         var reuse: Int32 = 1
         setsockopt(socketFD, SOL_SOCKET, SO_REUSEADDR, &reuse, socklen_t(MemoryLayout<Int32>.size))
+        var nosigpipe: Int32 = 1
+        setsockopt(socketFD, SOL_SOCKET, SO_NOSIGPIPE, &nosigpipe, socklen_t(MemoryLayout<Int32>.size))
         var address = sockaddr_in()
         address.sin_family = sa_family_t(AF_INET)
         address.sin_port = port.bigEndian
@@ -32,6 +34,8 @@ final class MediaStreamServer: @unchecked Sendable {
         while running {
             let client = accept(socketFD, nil, nil)
             guard client >= 0 else { continue }
+            var nosigpipe: Int32 = 1
+            setsockopt(client, SOL_SOCKET, SO_NOSIGPIPE, &nosigpipe, socklen_t(MemoryLayout<Int32>.size))
             queue.async { [weak self] in self?.respond(to: client) }
         }
     }
@@ -40,18 +44,43 @@ final class MediaStreamServer: @unchecked Sendable {
         defer { close(client) }
         var requestBytes = [UInt8](repeating: 0, count: 4096)
         let received = recv(client, &requestBytes, requestBytes.count, 0)
-        guard received > 0, let request = String(bytes: requestBytes.prefix(Int(received)), encoding: .utf8),
-              let file = FileHandle(forReadingAtPath: fileURL.path),
+        guard received > 0, let request = String(bytes: requestBytes.prefix(Int(received)), encoding: .utf8) else { return }
+        
+        let isHead = request.hasPrefix("HEAD")
+        guard request.hasPrefix("GET") || isHead else { return }
+
+        guard let file = FileHandle(forReadingAtPath: fileURL.path),
               let attributes = try? FileManager.default.attributesOfItem(atPath: fileURL.path),
               let sizeNumber = attributes[.size] as? NSNumber else { return }
         defer { try? file.close() }
+
         let size = sizeNumber.uint64Value
         let range = byteRange(in: request, size: size)
-        guard range.start < size else { write("HTTP/1.1 416 Range Not Satisfiable\r\nContent-Length: 0\r\n\r\n", to: client); return }
+        guard range.start < size else {
+            write("HTTP/1.1 416 Range Not Satisfiable\r\nContent-Length: 0\r\n\r\n", to: client)
+            return
+        }
+
         let length = range.end - range.start + 1
         let status = range.wasRequested ? "206 Partial Content" : "200 OK"
         let contentRange = range.wasRequested ? "Content-Range: bytes \(range.start)-\(range.end)/\(size)\r\n" : ""
-        write("HTTP/1.1 \(status)\r\nContent-Type: \(mimeType)\r\nContent-Length: \(length)\r\nAccept-Ranges: bytes\r\n\(contentRange)Connection: close\r\n\r\n", to: client)
+        let headers = """
+        HTTP/1.1 \(status)\r
+        Content-Type: \(mimeType)\r
+        Content-Length: \(length)\r
+        Accept-Ranges: bytes\r
+        \(contentRange)Server: ScoobyMediaServer/1.0\r
+        transferMode.dlna.org: Streaming\r
+        contentFeatures.dlna.org: DLNA.ORG_OP=01;DLNA.ORG_CI=0;DLNA.ORG_FLAGS=01700000000000000000000000000000\r
+        Connection: close\r
+        \r
+        
+        """
+        write(headers, to: client)
+
+        // For HEAD requests (used by TVs to query metadata/codecs), do not write body
+        if isHead { return }
+
         try? file.seek(toOffset: range.start)
         var remaining = length
         while remaining > 0, let chunk = try? file.read(upToCount: Int(min(UInt64(64 * 1024), remaining))), !chunk.isEmpty {
