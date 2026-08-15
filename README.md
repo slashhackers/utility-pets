@@ -4,6 +4,8 @@
 
 # 🐾 Utility Pet — native macOS companions
 
+> Contributors using AI coding agents: read [AI agent workflow policy](docs/AI_AGENT_WORKFLOW.md) before starting work.
+
 > A native macOS host for small, focused utility pets. The first pet is **🐶 Casting Scooby**, a local-media casting companion.
 
 ## Project status
@@ -116,4 +118,3 @@ Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
 ---
 
 <p align="center">Made with ❤️ for macOS users.</p>
-
