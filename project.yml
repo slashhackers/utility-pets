@@ -33,6 +33,14 @@ targets:
       - target: SharedUI
       - target: DeviceDiscovery
     settings: { base: { GENERATE_INFOPLIST_FILE: YES } }
+  CoffeeCat:
+    type: framework
+    platform: macOS
+    sources: [Pets/CoffeeCat/Sources]
+    dependencies:
+      - target: PetCore
+      - target: SharedUI
+    settings: { base: { GENERATE_INFOPLIST_FILE: YES } }
   UtilityPets:
     type: application
     platform: macOS
@@ -40,10 +48,12 @@ targets:
     settings:
       base:
         INFOPLIST_FILE: App/UtilityPets/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: dev.utilitypets.app
     dependencies:
       - target: PetCore
       - target: SharedUI
       - target: Scooby
+      - target: CoffeeCat
       - target: ScoobyFinderSync
         embed: true
   ScoobyFinderSync:

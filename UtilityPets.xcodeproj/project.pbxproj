@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00EC271AD01D7C8320863741 /* CoffeeCatCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1372DA0908B25DCD7FDF1264 /* CoffeeCatCommands.swift */; };
 		02FB8E724A7BD9067C14D114 /* PetCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0485F7C4609AC16D51D6046 /* PetCore.framework */; };
 		03A62279ED8A1342FCE678A8 /* SharedUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9499A81CE48359C362C96AF /* SharedUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1E81FEC1E06D590A826795ED /* ScoobyFinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF48B83365104806FB592CC /* ScoobyFinderSync.swift */; };
 		26B3762CC78692797F7228BB /* Scooby.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E99170BC9947E9B5A22E1F5 /* Scooby.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		29661587A3D6D3A7787FEBF2 /* CastingScoobyPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB53642E68778BD8A0260A6 /* CastingScoobyPet.swift */; };
+		296D9D506A49C0ED23388F7A /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = CD4D3645CAE1C2E6B74E3FB6 /* AppIcon.icns */; };
 		312B0BF77EB687C0606F61F6 /* SSDPDeviceDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A4B98C24467F00AA999945 /* SSDPDeviceDiscovery.swift */; };
+		325BFCB86B5D6385F4FEC3A1 /* PetCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0485F7C4609AC16D51D6046 /* PetCore.framework */; };
 		36A0209E934794BE51D7ACF7 /* NetworkAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB56E6A8BF22F4D77445C76 /* NetworkAddress.swift */; };
 		4E35ED760C5BD28820F42040 /* PetCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0485F7C4609AC16D51D6046 /* PetCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5049EBCE80B7175048348782 /* MediaStreamServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153ED317944C6C5B9EDB54F8 /* MediaStreamServer.swift */; };
+		58538ED3785FC10EDE44C22A /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9499A81CE48359C362C96AF /* SharedUI.framework */; };
 		62662753016222CDF316273F /* Scooby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E99170BC9947E9B5A22E1F5 /* Scooby.framework */; };
 		642C8BB224F66C748EB955ED /* PetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DCCCF7DF38919314A0F5F /* PetCard.swift */; };
 		70D5B0CBF67B0CED711E182A /* UtilityPetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788FF7245C168871270118E /* UtilityPetsApp.swift */; };
@@ -23,9 +27,12 @@
 		78892C5DEF5A2593444D8BC5 /* DeviceDiscovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA18F56615473107C73BAA7F /* DeviceDiscovery.framework */; };
 		95E813BD210E09DA4B6A8B97 /* DeviceDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC65F5E834A5CB46A34C970 /* DeviceDiscovery.swift */; };
 		9914523B75D50211A36BC390 /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9499A81CE48359C362C96AF /* SharedUI.framework */; };
+		B9078CD1B9550C50AC3EF416 /* CoffeeCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA57AF8F552F94B740F4B21 /* CoffeeCat.framework */; };
 		CC5430C4A3FD5E0FF38995CE /* ScoobyFinderSync.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 541F0BA71879AF3622ADB7C8 /* ScoobyFinderSync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE11AAD63662F9D4FA9B0FFA /* CoffeeCatPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF872820B4C9023CA3E444E1 /* CoffeeCatPet.swift */; };
 		D6F183D53E15376819159DB6 /* PetCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0485F7C4609AC16D51D6046 /* PetCore.framework */; };
 		D806D2EE2C8D72642BDC6660 /* DLNAController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71135EF769C56697FA2053C5 /* DLNAController.swift */; };
+		E232107E7DA734EACF735B6A /* CoffeeCat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBA57AF8F552F94B740F4B21 /* CoffeeCat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB1C55526A18B3C9910B1C10 /* PetPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD419D9E38869C3D57C6EC75 /* PetPlugin.swift */; };
 		F30D555B471F72FEB55CF5B7 /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9499A81CE48359C362C96AF /* SharedUI.framework */; };
 		F903EDBA641FAB3881DE8A36 /* PetRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46677E67C7F8468AB34DF5C3 /* PetRegistry.swift */; };
@@ -53,12 +60,26 @@
 			remoteGlobalIDString = 52A2D8E1E68CA58759871BDB;
 			remoteInfo = DeviceDiscovery;
 		};
+		2F4F492CA0CF159B328EB971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F93AC0F3B80694F75FB1192C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CEC5AD48B923521E14662FD;
+			remoteInfo = CoffeeCat;
+		};
 		357812EEBC96D04F05880A78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F93AC0F3B80694F75FB1192C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2B3632F01BEBDAF4AE84433D;
 			remoteInfo = PetCore;
+		};
+		50FB26BC0E670611762EC1EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F93AC0F3B80694F75FB1192C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD39A9547D351732B860A45;
+			remoteInfo = SharedUI;
 		};
 		57102C478BA1C22E1BDC9857 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -75,6 +96,13 @@
 			remoteInfo = SharedUI;
 		};
 		ABB20A294DC41014739C8878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F93AC0F3B80694F75FB1192C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B3632F01BEBDAF4AE84433D;
+			remoteInfo = PetCore;
+		};
+		EE5393B414B91CE5292F0F6A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F93AC0F3B80694F75FB1192C /* Project object */;
 			proxyType = 1;
@@ -104,6 +132,7 @@
 				4E35ED760C5BD28820F42040 /* PetCore.framework in Embed Frameworks */,
 				03A62279ED8A1342FCE678A8 /* SharedUI.framework in Embed Frameworks */,
 				26B3762CC78692797F7228BB /* Scooby.framework in Embed Frameworks */,
+				E232107E7DA734EACF735B6A /* CoffeeCat.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +140,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1372DA0908B25DCD7FDF1264 /* CoffeeCatCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCatCommands.swift; sourceTree = "<group>"; };
 		153ED317944C6C5B9EDB54F8 /* MediaStreamServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaStreamServer.swift; sourceTree = "<group>"; };
 		2C143FB7386387A74FBF41C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2E99170BC9947E9B5A22E1F5 /* Scooby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scooby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,11 +153,14 @@
 		8788FF7245C168871270118E /* UtilityPetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityPetsApp.swift; sourceTree = "<group>"; };
 		8FA2BD0626AE84BF4536A8E2 /* UtilityPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UtilityPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9499A81CE48359C362C96AF /* SharedUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA57AF8F552F94B740F4B21 /* CoffeeCat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoffeeCat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD419D9E38869C3D57C6EC75 /* PetPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetPlugin.swift; sourceTree = "<group>"; };
 		C58BE412AD6E0BD9E2E4602A /* PetEventBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetEventBus.swift; sourceTree = "<group>"; };
+		CD4D3645CAE1C2E6B74E3FB6 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
 		D51DCCCF7DF38919314A0F5F /* PetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCard.swift; sourceTree = "<group>"; };
 		D7A4B98C24467F00AA999945 /* SSDPDeviceDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSDPDeviceDiscovery.swift; sourceTree = "<group>"; };
 		DA18F56615473107C73BAA7F /* DeviceDiscovery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceDiscovery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF872820B4C9023CA3E444E1 /* CoffeeCatPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCatPet.swift; sourceTree = "<group>"; };
 		E0485F7C4609AC16D51D6046 /* PetCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PetCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC65F5E834A5CB46A34C970 /* DeviceDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDiscovery.swift; sourceTree = "<group>"; };
 		FFF48B83365104806FB592CC /* ScoobyFinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoobyFinderSync.swift; sourceTree = "<group>"; };
@@ -151,6 +184,16 @@
 				02FB8E724A7BD9067C14D114 /* PetCore.framework in Frameworks */,
 				F30D555B471F72FEB55CF5B7 /* SharedUI.framework in Frameworks */,
 				62662753016222CDF316273F /* Scooby.framework in Frameworks */,
+				B9078CD1B9550C50AC3EF416 /* CoffeeCat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C001FF3614D9294B3E195261 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325BFCB86B5D6385F4FEC3A1 /* PetCore.framework in Frameworks */,
+				58538ED3785FC10EDE44C22A /* SharedUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +208,7 @@
 				B447E24A0E3937EF16F51640 /* Sources */,
 				60FF5240C57EAE545A7320DC /* Sources */,
 				2A507BCB2A958A929CF128C5 /* Sources */,
+				847C1FF17C504111E81AEFDC /* Sources */,
 				AAC51EFB0BDF2A4440971636 /* UtilityPets */,
 				347CB4A0470DD525D2F32AFF /* Products */,
 			);
@@ -173,13 +217,11 @@
 		2A507BCB2A958A929CF128C5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				4EB53642E68778BD8A0260A6 /* CastingScoobyPet.swift */,
-				71135EF769C56697FA2053C5 /* DLNAController.swift */,
-				153ED317944C6C5B9EDB54F8 /* MediaStreamServer.swift */,
-				6EB56E6A8BF22F4D77445C76 /* NetworkAddress.swift */,
+				1372DA0908B25DCD7FDF1264 /* CoffeeCatCommands.swift */,
+				DF872820B4C9023CA3E444E1 /* CoffeeCatPet.swift */,
 			);
 			name = Sources;
-			path = Pets/Scooby/Sources;
+			path = Pets/CoffeeCat/Sources;
 			sourceTree = "<group>";
 		};
 		2CE54B037B54F9EB270AA14D /* FinderExtension */ = {
@@ -194,6 +236,7 @@
 		347CB4A0470DD525D2F32AFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				BBA57AF8F552F94B740F4B21 /* CoffeeCat.framework */,
 				DA18F56615473107C73BAA7F /* DeviceDiscovery.framework */,
 				E0485F7C4609AC16D51D6046 /* PetCore.framework */,
 				2E99170BC9947E9B5A22E1F5 /* Scooby.framework */,
@@ -213,11 +256,24 @@
 			path = Packages/SharedUI/Sources;
 			sourceTree = "<group>";
 		};
+		847C1FF17C504111E81AEFDC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4EB53642E68778BD8A0260A6 /* CastingScoobyPet.swift */,
+				71135EF769C56697FA2053C5 /* DLNAController.swift */,
+				153ED317944C6C5B9EDB54F8 /* MediaStreamServer.swift */,
+				6EB56E6A8BF22F4D77445C76 /* NetworkAddress.swift */,
+			);
+			name = Sources;
+			path = Pets/Scooby/Sources;
+			sourceTree = "<group>";
+		};
 		AAC51EFB0BDF2A4440971636 /* UtilityPets */ = {
 			isa = PBXGroup;
 			children = (
 				425107E5FADAB99ADBD34676 /* Info.plist */,
 				8788FF7245C168871270118E /* UtilityPetsApp.swift */,
+				FF5B16ED500D7990347D8807 /* Resources */,
 			);
 			name = UtilityPets;
 			path = App/UtilityPets;
@@ -242,6 +298,14 @@
 			);
 			name = Sources;
 			path = Packages/DeviceDiscovery/Sources;
+			sourceTree = "<group>";
+		};
+		FF5B16ED500D7990347D8807 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD4D3645CAE1C2E6B74E3FB6 /* AppIcon.icns */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +366,26 @@
 			productReference = DA18F56615473107C73BAA7F /* DeviceDiscovery.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		8CEC5AD48B923521E14662FD /* CoffeeCat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE8AAF9F6B1560622F190EE /* Build configuration list for PBXNativeTarget "CoffeeCat" */;
+			buildPhases = (
+				73E8C25732C055B028389D50 /* Sources */,
+				C001FF3614D9294B3E195261 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC7AA76E4A39ECDE816F33EF /* PBXTargetDependency */,
+				0E81111D739553658289FE4D /* PBXTargetDependency */,
+			);
+			name = CoffeeCat;
+			packageProductDependencies = (
+			);
+			productName = CoffeeCat;
+			productReference = BBA57AF8F552F94B740F4B21 /* CoffeeCat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		8FD39A9547D351732B860A45 /* SharedUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A84D678A5E41EED053762C27 /* Build configuration list for PBXNativeTarget "SharedUI" */;
@@ -341,6 +425,7 @@
 			buildConfigurationList = F767C42B0BD66E68B7A9A55A /* Build configuration list for PBXNativeTarget "UtilityPets" */;
 			buildPhases = (
 				C9DAEE4A6E896168821EA05A /* Sources */,
+				9D7797048D1E4CB7966AF0E8 /* Resources */,
 				4EA2A74B48CA4CB2646DC6A8 /* Frameworks */,
 				13FA1D4D0401C8AAFF9ED8C9 /* Embed Foundation Extensions */,
 				C75B357C7D5BD6879A55AE3C /* Embed Frameworks */,
@@ -351,6 +436,7 @@
 				EE2B2443A433D8EFB9A58C3D /* PBXTargetDependency */,
 				80F6725F4D261FF3394E8FD4 /* PBXTargetDependency */,
 				1C39A7CB19BAD06602C42A14 /* PBXTargetDependency */,
+				FAF30E12A38DE9B044F0CAB1 /* PBXTargetDependency */,
 				F1D090972E75BAA07B94C754 /* PBXTargetDependency */,
 			);
 			name = UtilityPets;
@@ -389,11 +475,23 @@
 				8FD39A9547D351732B860A45 /* SharedUI */,
 				52A2D8E1E68CA58759871BDB /* DeviceDiscovery */,
 				17859B46FA2F735EBB912C8A /* Scooby */,
+				8CEC5AD48B923521E14662FD /* CoffeeCat */,
 				F125B80A6A53D014B4D7FA56 /* UtilityPets */,
 				E0DD05B59383088538047FC7 /* ScoobyFinderSync */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D7797048D1E4CB7966AF0E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296D9D506A49C0ED23388F7A /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C8D2E1C3E1947A6483A6E7C /* Sources */ = {
@@ -431,6 +529,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		73E8C25732C055B028389D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC271AD01D7C8320863741 /* CoffeeCatCommands.swift in Sources */,
+				CE11AAD63662F9D4FA9B0FFA /* CoffeeCatPet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D3498632D7FDCDC9B248F66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,6 +560,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0E81111D739553658289FE4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD39A9547D351732B860A45 /* SharedUI */;
+			targetProxy = 50FB26BC0E670611762EC1EB /* PBXContainerItemProxy */;
+		};
 		1C39A7CB19BAD06602C42A14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 17859B46FA2F735EBB912C8A /* Scooby */;
@@ -478,6 +590,11 @@
 			target = 8FD39A9547D351732B860A45 /* SharedUI */;
 			targetProxy = A614DCAA8109B655DA51BD91 /* PBXContainerItemProxy */;
 		};
+		EC7AA76E4A39ECDE816F33EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B3632F01BEBDAF4AE84433D /* PetCore */;
+			targetProxy = EE5393B414B91CE5292F0F6A /* PBXContainerItemProxy */;
+		};
 		EE2B2443A433D8EFB9A58C3D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2B3632F01BEBDAF4AE84433D /* PetCore */;
@@ -487,6 +604,11 @@
 			isa = PBXTargetDependency;
 			target = E0DD05B59383088538047FC7 /* ScoobyFinderSync */;
 			targetProxy = 0F36E53E41E778314F355ACB /* PBXContainerItemProxy */;
+		};
+		FAF30E12A38DE9B044F0CAB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CEC5AD48B923521E14662FD /* CoffeeCat */;
+			targetProxy = 2F4F492CA0CF159B328EB971 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -626,6 +748,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.utilitypets.app;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -730,6 +853,28 @@
 			};
 			name = Release;
 		};
+		C0FB3A854B11A51379037853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 		D455BF0E184C83DD5FBDE5F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -830,6 +975,28 @@
 			};
 			name = Release;
 		};
+		F25604D2EC3D894C8CCD70D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
 		FC8B43FC4266EE574EE909F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -840,6 +1007,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.utilitypets.app;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -897,6 +1065,15 @@
 			buildConfigurations = (
 				99E798AB7F1A5AD707CD355C /* Debug */,
 				D6FB68D8994E45A2F1EC57FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BDE8AAF9F6B1560622F190EE /* Build configuration list for PBXNativeTarget "CoffeeCat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25604D2EC3D894C8CCD70D1 /* Debug */,
+				C0FB3A854B11A51379037853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

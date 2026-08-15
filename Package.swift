@@ -10,7 +10,7 @@ let package = Package(
         .executable(name: "UtilityPet", targets: ["UtilityPet"])
     ],
     targets: [
-        .executableTarget(name: "UtilityPet", dependencies: ["PetCore", "SharedUI", "Scooby"], path: "App/UtilityPets", exclude: ["Info.plist"], resources: [.process("Resources")]),
+        .executableTarget(name: "UtilityPet", dependencies: ["PetCore", "SharedUI", "Scooby", "CoffeeCat"], path: "App/UtilityPets", exclude: ["Info.plist"], resources: [.process("Resources")]),
         .target(name: "PetCore", path: "Packages/PetCore/Sources"),
         .target(name: "SharedUI", path: "Packages/SharedUI/Sources"),
         .target(name: "FinderKit", path: "Packages/FinderKit/Sources"),
@@ -19,7 +19,9 @@ let package = Package(
         .target(name: "NotificationKit", path: "Packages/NotificationKit/Sources"),
         .target(name: "DeviceDiscovery", path: "Packages/DeviceDiscovery/Sources"),
         .target(name: "Scooby", dependencies: ["PetCore", "SharedUI", "DeviceDiscovery"], path: "Pets/Scooby/Sources"),
+        .target(name: "CoffeeCat", dependencies: ["PetCore", "SharedUI"], path: "Pets/CoffeeCat/Sources"),
         .testTarget(name: "PetCoreTests", dependencies: ["PetCore"], path: "Tests/PetCoreTests"),
-        .testTarget(name: "ScoobyTests", dependencies: ["Scooby", "DeviceDiscovery"], path: "Tests/ScoobyTests")
+        .testTarget(name: "ScoobyTests", dependencies: ["Scooby", "DeviceDiscovery"], path: "Tests/ScoobyTests"),
+        .testTarget(name: "CoffeeCatTests", dependencies: ["CoffeeCat"], path: "Tests/CoffeeCatTests")
     ]
 )

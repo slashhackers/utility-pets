@@ -1,4 +1,5 @@
 import AppKit
+import CoffeeCat
 import PetCore
 import Scooby
 import SwiftUI
@@ -9,7 +10,8 @@ struct UtilityPetsApp: App {
     @StateObject private var registry: PetRegistry
     init() {
         let scooby = CastingScoobyPet()
-        _registry = StateObject(wrappedValue: PetRegistry(pets: [scooby]))
+        let coffeeCat = CoffeeCatPet()
+        _registry = StateObject(wrappedValue: PetRegistry(pets: [scooby, coffeeCat]))
         UtilityPetsServiceDelegate.onFiles = { files in
             Task { @MainActor in files.forEach(scooby.open(fileURL:)) }
         }
